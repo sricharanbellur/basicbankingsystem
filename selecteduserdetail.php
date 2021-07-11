@@ -140,7 +140,7 @@ if(isset($_POST['submit']))
             <form method="post" name="tcredit" class="" >
             <label style="color:white;">Transfer To:</label>
             <select name="to" class=" form-control  col-6 "required>
-                <option value="" disabled selected style="color:white;">Choose</option>
+                <option value="" disabled selected style="color:black;">Choose</option>
                 <?php
                     include 'config.php';
                     $sid=$_GET['id'];
@@ -152,7 +152,7 @@ if(isset($_POST['submit']))
                     }
                     while($rows = mysqli_fetch_assoc($result)) {
                 ?>
-                    <option class="table" value="<?php echo $rows['id'];?>" >
+                    <option class="table " style="color:black;" value="<?php echo $rows['id'];?>" >
                     
                         <?php echo $rows['name'] ;?> (Balance: 
                         <?php echo $rows['balance'] ;?> ) 
