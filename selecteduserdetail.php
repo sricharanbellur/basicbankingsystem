@@ -140,7 +140,7 @@ if(isset($_POST['submit']))
             <form method="post" name="tcredit" class="" >
             <label style="color:white;">Transfer To:</label>
             <select name="to" class=" form-control  col-6 "required>
-                <option value="" disabled selected>Choose</option>
+                <option value="" disabled selected style="color:white;">Choose</option>
                 <?php
                     include 'config.php';
                     $sid=$_GET['id'];
