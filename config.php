@@ -1,9 +1,13 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "sparks_bank";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "sparks_bank";
+$servername = "remotemysql.com";
+$username = "4QH9jhyMFI";
+$password = "CrfCEwMcgO";
+$dbname = "4QH9jhyMFI";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 	if(!$conn){
