@@ -1,0 +1,98 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.intro{
+	background: #EAF0F1;
+}
+h1{
+	color: #4C4B4B;
+	font-weight: bold;
+	transition: 0.5s;
+}
+h3{
+	color:#2F363F;
+}
+button{
+	border: 1px solid grey;
+	
+
+	background:#7B8788; 
+	color:white;
+	letter-spacing: 1px;
+	font-size: 15px;
+	transition: 0.5s;
+}
+button:hover,h1:hover{
+	transform: scale(1.1);
+}
+button:hover{
+	background-color:#0c0000;
+}
+
+@media only screen and (orientation:portrait){
+	.intro{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	h1{
+		font-size: 30px;
+	}
+	.act{
+		padding-bottom: 100px;
+	}
+}
+
+  
+  * {
+	box-sizing: border-box;
+  }
+  
+  .bg-image {
+	/* The image used */
+	background-image: url("img/bank.jpg");
+  
+	/* Add the blur effect */
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+  
+	/* Full height */
+	height: 100%;
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 100%;
+	padding: 20px;
+  }
+  .count-number {
+    margin-top: 17px;
+    font-size: 3.214em;
+    line-height: 45px;
+    color: #323336;
+    font-weight: 400;
+  }
+  .count-descr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

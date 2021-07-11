@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/slides.css">
+
+</head>
+<body>
+
+<div class="slideshow-container">
+<center>
+    
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="img/bank.jpg" style="width:80%">
+  <div class="text">At Sricharan Bank, we provide various ways to bank. We are committed to making banking simpler and reach many people than before. We totally understand and fulfill the growing needs of the customers.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="img/bank2.jpg" style="width:80%">
+  <div class="text">At Sricharan, we understand your need to save your hard-earned money safely, securely and conveniently. </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="img/bank4.jpg" style="width:80%">
+  <div class="text">Sricharan Bank account has an array of benefits ensuring you a comfortable banking experience, from anywhere on the globe.We keep your money safe in a safe locker!!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="img/bank3.jpg" style="width:80%">
+  <div class="text">We at this Bank ,Ensure Safety of your Hard Earned Money and Be totally beware of these kinda fraudsters and scamsters !!</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="img/bank5.jpg" style="width:80%">
+  <div class="text">Let us Grow Together!! Create Your account in our bank now and get your money doubled by depositing at out beneficial interest rates !! </div>
+</div></center>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+</div>
+<script>
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n==undefined){n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  timer = setTimeout(showSlides, 5000);
+} 
+</script>
+
+</body>
+</html> 
