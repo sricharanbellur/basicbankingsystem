@@ -93,7 +93,7 @@
        <p><small><strong>   -Phone : 04324 - 269000 Fax : 04324 - 225514 CIN : L65110TN1916PLC001295</strong></small></p>
                         <div>
                             <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/sricharan-bellur-949500200/"><i class="fa fa-linkedin "></i></a>                      
-                            <a class="btn btn-social-icon btn-github" href=""><i class="fa fa-github"></i></a>
+                            <a class="btn btn-social-icon btn-github" href="https://github.com/sricharanbellur/basicbankingsystem"><i class="fa fa-github"></i></a>
                             <a class="btn btn-social-icon btn-youtube" href="https://youtu.be/qErZBRZreRk"><i class="fa fa-youtube"></i></a>
                         </div>
                     <p><small><strong>   -Made By Sricharan Bellur As a task 1 for the internship at The Sparks Foundation </strong></small></p>
